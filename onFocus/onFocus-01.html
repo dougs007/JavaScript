@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title>ScriptonFocus-01</title>
+    <script language="JavaScript">
+        <!--
+        function processa1() {
+            d = eval(document.calculo.campo1.value) +
+                eval(document.calculo.campo2.value) +
+                eval(document.calculo.campo3.value)
+            document.calculo.campo4.value = d
+
+        }
+
+        //-->
+    </script>
+</head>
+
+<body bgcolor="#fff">
+
+<form name="calculo">
+    <h1>Usando onfocus para executar cálculos e mensagens</h1>
+
+    Campo1 ....: <input type="text" name="campo1" value="" size="10" maxlength="10"
+                        onblur='if(this.value==""){this.value=0}'>
+    <br>Campo2 ....: <input type="text" name="campo2" value="" size="10" maxlength="10"
+                            onblur='if(this.value==""){this.value=0}'>
+    <br>Campo3 ....: <input type="text" name="campo3" value="" size="10" maxlength="10"
+                            onblur='if(this.value==""){this.value=0}'>
+    <br>Resultado ...: <input type="text" name="campo4" value="" size="10" onfocus="processa1()">
+
+    <br>Comentário ...: <input type="text" name="campo5" value="" size="30"
+                               onfocus="alert('Este campo de comentário deve ser preenchido')">
+
+    <!-- Quando ativado o onFocus, ele dispara o alerta e todos os campos da página ficam impossibilitados de serem sobrescritos -->
+
+</form>
+</body>
+</html>

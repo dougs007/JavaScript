@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title>Script Onclick-03</title>
+    <script language="JavaScript">
+        <!--
+        function processa1() {
+            d = eval(document.calculo.campo1.value) +
+                eval(document.calculo.campo2.value) +
+                eval(document.calculo.campo3.value)
+            document.calculo.campo4.value = d
+
+        }
+
+        function processa2() {
+            d = eval(document.calculo.campo1.value) *
+                eval(document.calculo.campo2.value) *
+                eval(document.calculo.campo3.value)
+            document.calculo.campo4.value = d
+
+        }
+
+        //-->
+    </script>
+</head>
+
+<body bgcolor="#fff">
+
+<form name="calculo">
+    <h1>Usando onClick para alterar o conteúdo de outros campos</h1>
+
+    Campo1 ....: <input type="text" name="campo1" value="" size="10" maxlength="10">
+    Campo2 ....: <input type="text" name="campo2" value="" size="10" maxlength="10">
+    Campo3 ....: <input type="text" name="campo3" value="" size="10" maxlength="10">
+    <hr>
+
+    <div align="center">
+        <input type="button" value="Soma" onclick="processa1()">
+        <input type="button" value="Multiplica" onclick="processa2()">
+        <hr>
+        Resultado...: <input type="text" name="campo4" value="" size="10" maxlength="0">
+    </div>
+</form>
+</body>
+</html>
