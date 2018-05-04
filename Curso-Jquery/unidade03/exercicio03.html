@@ -1,0 +1,70 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Curso jQuery Fundamental</title>
+        
+        <style>
+			body { font-family:Arial, Helvetica, sans-serif; font-size:0.9em; }
+			li { padding:5px;margin-bottom:1px }
+			.vermelho { color:#F00 }
+			.verde { color:#096 }
+		</style>
+
+		<script src="jquery-3.2.1.min.js"></script>
+        <script>
+			$(function() {
+
+	            // Muda o estilo de todos os elementos contídos em li.
+			    $("li").css("background-color","#FF9");
+
+
+	            // Muda o estilo de todos os elementos contídos em li que tenham classes.
+    //          $("li[class]").css("background-color","#0B1");
+
+
+	            // Muda o estilo de todos os elementos contídos em li que tenham classes específicas.
+    //          $("li[class]").css("background-color","#0B1");
+
+
+	            // Muda o estilo de todos os elementos contídos em li que tenham mais de 1 classe específica.
+    //          $("li[class='vermelho'],[class='verde']").css("background-color","#0BF");
+
+
+			    // Muda o estilo de todos os elementos contídos em li que tenham id's.
+    //          $("li[id]").css("color","#1EF");
+
+
+	            // Muda o estilo de todos os elementos contídos em li que tenham id's e títulos.
+    //          $("li[id][title]").css("background-color","#0EE");
+
+
+	            // Muda o estilo dos elementos contídos em li que tem mais de um id determinado.
+    //          $("li[id='texto1'],[id='texto2']").css("background-color","#F00");
+
+
+	            // Muda o estilo dos elementos contídos em li que tenham um id específico e que também tenha título.
+    //          $("li[id='texto1'][title]").css("background-color","#F00");
+
+
+	            // Muda o estilo dos elementos contídos em li que tenham a classe vermelha.
+    //          $("li.vermelho").css("background-color","#0FF");
+
+
+	            // Muda o estilo dos elementos contídos em li que tenham o id igual a 'texto2'.
+    //          $("li#texto2").css("color","#F0F");
+
+
+			});
+		</script>
+    </head>
+
+    <body>
+    	<ul>
+            <li class="vermelho">Curso HTML5 Essencial</li>
+            <li class="verde">Curso CSS3 Essencial</li>
+            <li id="texto1">Curso Javascript Essencial</li>
+            <li id="texto2" title="Esse curso">Curso jQuery Fundamental</li>
+    	</ul>
+    </body>
+</html>

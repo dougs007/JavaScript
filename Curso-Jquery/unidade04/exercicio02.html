@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Curso jQuery Fundamental</title>
+
+        <script src="jquery-3.2.1.min.js"></script>
+        <script>
+			$( function(e) {
+
+                // Adicionando um título a página via JQuery.
+                $("h1").html("Formação Desenvolvimento Web Completo - Aluno Douglas");
+
+                // Cria uma nova li dentro de ul, adicionando o elemento novo ao final da lista.
+                $("ul#listacursos").append("<li>Curso Bootstrap Fundamental</li>");
+
+                // Cria uma nova li dentro de ul, adicionando o elemento novo ao começo da lista.
+                $("ul#listacursos").prepend("<li>Curso PHP Fundamental</li>");
+
+            });
+
+
+            // MAIS SOBRE O ASSUNTO E ALGUNS MAÇETES ****
+
+            /*
+            * append = final, ao fim, último.
+            * prepend = inicial, ao início, primeiro.
+            *
+            * */
+		</script>
+
+    </head>
+
+    <body>
+    	<h1></h1>
+
+        <ul id="listacursos">
+            <li>Curso HTML5 Essencial</li>
+            <li>Curso CSS3 Essencial</li>
+            <li>Curso Javascript Essencial</li>
+            <li>Curso jQuery Fundamental</li>
+        </ul>
+
+    </body>
+
+</html>

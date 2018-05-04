@@ -1,0 +1,64 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Curso jQuery Fundamental</title>
+    </head>
+
+    <body>
+    	<nav>
+        	<a href="#">Brasil</a>
+            <a href="#">Argentina</a>
+            <a href="#">Uruguai</a>
+            <a href="#">Chile</a>
+            <a href="#">Colombia</a>
+        </nav>
+
+        <a href="#">Paraguai</a>
+
+		<!-- scripts -->
+        <script src="jquery-3.2.1.min.js"></script>
+        <script>
+
+            // CONTANDO QUANTAS VEZES O ELEMENTO $("a") ESTÁ SENDO DECLARADO NO ARQUIVO TODO.
+        	$(function() {
+				alert("Essa página contém " + $("a").length + " Links");
+			});
+
+        	// CONTA OS ELEMENTOS USADOS SOMENTE DENTRO DA TAG <nav>, E DENTRO DE <a>
+        	$(function () {
+                alert("Dentro apenas do elemento <'nav'> contém-se " + $("nav a").length + " Links");
+            });
+
+        	// MUDA A COR DOS ELEMENTOS CONTIDOS APENAS DENTRO DA TAG <nav>, E DENTRO DE <a>
+        	$(function (){
+                alert("Mudança CSS");
+                $("nav a").css("color","green"); //MUDANDO PARA A COR VERDE .
+            });
+
+        	// FAZENDO 2 ALTERAÇÕES NO MESMO ARQUIVO NOS ELEMENTOS CONTIDOS APENAS
+            // DENTRO DA TAG <nav>, E DENTRO DE <a>
+        	$(function (){
+                alert("Mudança em grupo CSS");
+                // MUDANDO COR DE FUNDO PARA PRETA, TIRANDO MARCAÇÃO UNDERLINE E RENDERIZAÇÃO COMO BLOCO
+                $("a:contains('Argentina')").css("background-color","black").css("text-decoration","none").css("display","block");
+            });
+
+        	// MAIS SOBRE O ASSUNTO E ALGUNS MAÇETES ****
+
+        	/*
+        	* PARA FAZER A MUDANÇA EM DETERMINADO ELEMENTO
+        	* USE AS SEGUINTES LISTADAS ABAIXO
+        	* $("a:first") => para fazer alterações somente no primeiro elemento de <a>
+        	* $("a:last") => para fazer alterações somente no ultimo elemento de <a>
+        	* $("a:odd") => para fazer alterações somente no elemento pares de <a>
+        	* $("a:even") => para fazer alterações somente no elemento ímpares de <a>
+        	* $("a:nth(2)") => para fazer alterações somente no 2º elemento  de <a>, os elementos
+        	* começam a contar pelo número 0 invés de 1 *** MESMO TIPO DO ARRAY ***
+        	* $("a:contains('Brasil')") => para fazer alterações somente no elemento chamado de Brasil dentro da tag <a>
+        	*     */
+
+        </script>
+
+    </body>
+</html>

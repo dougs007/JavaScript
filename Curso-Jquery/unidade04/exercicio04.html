@@ -1,0 +1,53 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Curso jQuery Fundamental</title> 
+        
+        <script src="jquery-3.2.1.min.js"></script>
+        <script>
+			$(function() {
+
+			    // Remove o último elemento contido em <li>.
+				//$("li:last").remove();
+
+			    // Remove todos os elementos li que contenham a classe 'especifico'.
+				//$("li[class$=especifico]").remove();
+
+				// ou então pode ser feito da seguinte maneira, que é bem mais prática e fácil.
+                // $("li.especifico").remove();
+
+                // Renomeia o primeiro arquivo de li para Curso de Bootstrap;
+                $("li:first").replaceWith("<li>Curso de Bootstrap</li>");
+
+                $("ul").wrapAll("<div style='border:1px solid #ccc;'></div>");
+
+			});
+
+
+			/* Wiki Unidade04/Exercicio04.
+			*
+			* remove = remover algum elemento existente ou adicionado nesta página.
+			* replaceWith = renomeia o arquivo com o novo nome.
+			* wrapAll = Embrulha o que estiver dentro.
+			* . = classe.
+			* # = id.
+			*
+			* */
+		</script>        
+    </head>
+
+    <body>
+    	
+      
+		<ul>
+        		
+            <li class="especifico">Curso HTML5 Essencial</li>
+            <li>Curso CSS3 Essencial</li>
+            <li class="especifico">Curso Javascript Essencial</li>
+            <li>Curso jQuery Fundamental</li>
+        </ul>
+        
+    </body>
+
+</html>
