@@ -4,21 +4,39 @@
         <meta charset="UTF-8">
         <title>Curso jQuery Fundamental</title>
         <style>
-			#janela { width:200px; height:200px; background-color:#069; border:5px solid #000 }
+			#janela { width:200px; height:2050px; background-color:#069; border:5px solid #000 }
 		</style>
-        
+
         <script src="jquery-3.2.1.min.js"></script>
         <script>
 			jQuery(document).ready(function() {
-						
+                /**
+                 * Para verificar a mensagem e saber o tamanho da janela (navegador),
+                 * inspecione a página deste arqivo no browse que ele
+                 * lhe mostrará a mensagem contendo as informações de largura e altura
+                * */
+
+                    console.log("A altura da minha janela é:\t" + $(window).height () );
+                    console.log("A largura da minha janela é:\t" + $(window).width() );
+
+                /**
+                 * Inspecione a página deste arqivo no browse que ele
+                 * lhe mostrará a mensagem contendo as informações do documento (div).
+                 * */
+
+                    console.log("A altura do meu documento é:\t" + $(document).height () );
+                    console.log("A largura do meu documento é:\t" + $('#janela').width() );
+
+
+
 			});
-		</script>        
+		</script>
     </head>
 
     <body>
-		
+
         <div id="janela">
-        
+
         </div>
 
     </body>
