@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+</head>
+<body>
+
+<form>
+    <input class="target" type="text" value="Field 1">
+    <select class="target">
+        <option value="option1" selected="selected">Option 1</option>
+        <option value="option2">Option 2</option>
+    </select>
+</form>
+<div id="other">
+    Trigger the handler / manipulador de mão | Acionar o manipulador
+</div>
+
+</body>
+<script>
+    /**
+     * Ao mudar alguma opção do input, o evento change será acionado,
+     * jogando um alerta na tela.
+     */
+
+    $(".target").change(function () {
+        alert("o elemento manipulador foi acionado -> for .change() called.");
+    });
+
+    /**
+     *  O evento abaixo é acionado ao clicar sobre a div other
+     */
+    $( "#other" ).click(function() {
+        $( ".target" ).change();
+    });
+</script>
+</html>
+
