@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Laço de Repetição - While</title>
+    <style>
+        div {
+            color: red;
+        }
+    </style>
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+</head>
+<body>
+
+
+<script>
+
+    /**
+     * Usando while de uma maneira simples e fácil
+     * No exemplo abaixo repetiremos o loop enquanto a var i for menor que 5 !
+     */
+
+    alert("Quando der 5 horas você ganhará um sorvete !");
+
+    var i = 0;
+    while (i < 5) {
+        // enquanto o valor de i for menor que 5 ele repetirá o laço.
+        if (i <= 1) {
+            // caso a hora seja 0 ou 1 o tratamento será hora.
+            alert("Desculpa, ainda não é 5 horas, ainda são -> " + i + " hora");
+        } else
+        // caso a hora seja maior que 1 o tratamento será horas e não hora.
+            alert("Desculpa, ainda não é 5 horas, ainda são -> " + i + " horas");
+        i++; // i recebe i, ou seja, i+1.
+    }
+    // ao sair do loop será exibida a seguinte mensagem.
+    alert("Vamos tomar seu icecream !");
+
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Laço de Repetição - For parte 2</title>
+    <style>
+        div {
+            color: red;
+        }
+    </style>
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+</head>
+<body>
+
+
+<script>
+
+    /**
+     * Usando for com break de uma maneira um pouco menos simples.
+     */
+
+    var algumaCoisa = '';
+    for (var i = 0; i < 5; i++) {
+        if (algumaCoisa === '') {
+            alert('algumaCoisa é identico a vazio !\n\nA condição será encerrada sem exibir o ultimo alert ! ');
+            break;
+        }
+        // A declaração seguinte somente será executada se
+        // a condição 'algumaCoisa' for falsa
+        console.log('Cheguei até aqui');
+        alert('Cheguei até aqui -> ' + i);
+    }
+
+</script>
+
+</body>
+</html>
