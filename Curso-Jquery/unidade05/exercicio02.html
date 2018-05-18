@@ -6,19 +6,29 @@
         <style>
 			#janela { position:absolute; top:20px; left:50px; width:200px; height:200px; background-color:#069; border:5px solid #000; padding:0 10px; }
 		</style>
-        
+
         <script src="jquery-3.2.1.min.js"></script>
         <script>
 			$(function(e) {
-
+                console.log('Posicao top do elemento: ' + $('#janela').position().top);
+                console.log('Posicao left do elemento: ' + $('#janela').position().left);
 			});
-		</script>        
+
+            /**
+             * Posições do css-> position:
+             * absolute => Fica na posição que estiver.
+             * fixed    => Mesma características do absolute porém com algumas peculiaridades.
+             * relative => Aumenta um pouco os tamanhos.
+             * static   => O mesmo que não ter posição nenhuma.
+             */
+
+		</script>
     </head>
 
     <body>
-		
+
         <div id="janela">
-        
+
         </div>
 
     </body>
