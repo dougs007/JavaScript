@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Eventos - JS</title>
+    <style>
+        div {
+            color: red;
+        }
+    </style>
+    <script src="jquery-3.2.1.min.js"></script>
+
+</head>
+<body>
+
+
+<script>
+
+    /**
+     * Eventos em JS usando JQuery.
+     *
+     * Usando JQuery para esconder e mostar elementos de uma
+     * maneira bem tranquila e simples.
+     *
+     */
+
+    $(function (e) {
+        $('#jan').hide(); // traz o conteudo escondido
+
+        $('#most').hover(mostrarElemento, esconderElemento); // ao clicar em mostrar, sera acionado a funcao de mostrar o elemento.
+
+    });
+
+    function mostrarElemento(e) {
+        $('#jan').show(); // Conteudo da funcao de mostrar o elemento
+
+    }
+
+    function esconderElemento(e) {
+        $('#jan').hide(); // Conteudo da funcao de esconder o elemento
+
+    }
+
+    /* ou pode ser feito de uma maneira mais padronizada para melhor entendimento. */
+
+    // $(function (e) {
+    //     $('#jan').hide(); // ao carregar a DOM o nosso conteúdo vem escondido
+    //
+    //     $('#most').hover(function (e) {
+    //         $('#jan').show(); // ao clickar sobre o botao most, ele acionara a funcao de mostar o conteudo
+    //
+    //     });
+    //
+    //     $('#most').hover(function (e) {
+    //         $('#jan').hide(); // ao clickar sobre o botao esc ele acionara a funcao de escoonder o conteudo.
+    //     });
+    //
+    // });
+
+</script>
+
+<input type="button" id="most" value="most">
+
+
+<p id="jan">Hello World</p>
+
+</body>
+</html>
