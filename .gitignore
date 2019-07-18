@@ -3,5 +3,6 @@ Aqui será mantido todos os arquivos que não serão versionados
 # Arquivos da IDE PhpStorm
 
 .idea/
+.idea
 .idea/workspace.xml
 .idea/vcs.xml
